@@ -1,0 +1,28 @@
+{
+    "name": "talm/comment",
+    "type": "library",
+    "description": "Anax comment module.",
+    "keywords": ["boilerplate", "framework", "mvc", "micro", "education"],
+    "homepage": "https://dbwebb.se/anax",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tobias Almroth",
+            "email": "almrooth@gmail.com",
+            "homepage": "https://dbwebb.se",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/canax/comment/issues"
+    },
+    "autoload": {
+        "psr-4": { 
+            "Anax\\": "src/",
+            "Talm\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.6"
+    }
+}
