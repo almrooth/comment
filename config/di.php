@@ -6,18 +6,18 @@ return [
 
     // Services to add to the container.
     "services" => [
-        "pageRender" => [
+        "db" => [
             "shared" => true,
             "callback" => function () {
-                $obj = new \Talm\Page\PageRender();
-                $obj->setDI($this);
+                $obj = new \Anax\Database\DatabaseQueryBuilder();
+                $obj->configure("database.php");
                 return $obj;
             }
         ],
-        "pageController" => [
+        "pageRender" => [
             "shared" => true,
             "callback" => function () {
-                $obj = new \Talm\Page\PageController();
+                $obj = new \Almrooth\Page\PageRender();
                 $obj->setDI($this);
                 return $obj;
             }
@@ -25,7 +25,7 @@ return [
         "commentController" => [
             "shared" => false,
             "callback" => function () {
-                $obj = new \Talm\Comment\CommentController();
+                $obj = new \Almrooth\Comment\CommentController();
                 $obj->setDI($this);
                 return $obj;
             }
@@ -33,7 +33,7 @@ return [
         "userController" => [
             "shared" => true,
             "callback" => function () {
-                $obj = new \Talm\Comment\UserController();
+                $obj = new \Almrooth\Comment\UserController();
                 $obj->setDI($this);
                 return $obj;
             }
@@ -41,7 +41,7 @@ return [
         "adminController" => [
             "shared" => true,
             "callback" => function () {
-                $obj = new \Talm\Comment\AdminController();
+                $obj = new \Almrooth\Comment\AdminController();
                 $obj->setDI($this);
                 return $obj;
             }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Talm\Comment;
+namespace Almrooth\Comment;
 
 use \Anax\Database\ActiveRecordModel;
 

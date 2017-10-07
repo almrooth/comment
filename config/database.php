@@ -1,0 +1,50 @@
+<?php
+/**
+ * Config file for Database.
+ *
+ * Example for MySQL.
+ *  "dsn" => "mysql:host=localhost;dbname=test;",
+ *  "username" => "test",
+ *  "password" => "test",
+ *  "driver_options"  => [\PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'"],
+ *
+ * Example for SQLite.
+ *  "dsn" => "sqlite:memory::",
+ *
+ */
+
+// For local development with database at localhost
+if ($_SERVER["SERVER_NAME"] == "localhost") {
+    return [
+        "dsn"             => "mysql:host=localhost;dbname=anaxdb;",
+        "username"        => "anax",
+        "password"        => "anax",
+        "driver_options"  => [\PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'"],
+        "fetch_mode"      => \PDO::FETCH_OBJ,
+        "table_prefix"    => null,
+        "session_key"     => "Anax\Database",
+
+        // True to be very verbose during development
+        "verbose"         => null,
+
+        // True to be verbose on connection failed
+        "debug_connect"   => false,
+    ];
+} else {
+    // For production use where database is not ot localhost
+    return [
+        "dsn"             => "mysql:host=localhost;dbname=test;",
+        "username"        => "test",
+        "password"        => "test",
+        "driver_options"  => [\PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'"],
+        "fetch_mode"      => \PDO::FETCH_OBJ,
+        "table_prefix"    => null,
+        "session_key"     => "Anax\Database",
+
+        // True to be very verbose during development
+        "verbose"         => null,
+
+        // True to be verbose on connection failed
+        "debug_connect"   => false,
+    ];
+}

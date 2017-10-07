@@ -1,6 +1,6 @@
 <?php
 
-namespace Talm\Page;
+namespace Almrooth\Page;
 
 use \Anax\DI\InjectionAwareInterface;
 use \Anax\DI\InjectionAwareTrait;

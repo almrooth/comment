@@ -1,15 +1,15 @@
 <?php
 
-namespace Talm\Comment;
+namespace Almrooth\Comment;
 
 use \Anax\Configure\ConfigureInterface;
 use \Anax\Configure\ConfigureTrait;
 use \Anax\DI\InjectionAwareInterface;
 use \Anax\DI\InjectionAwareTrait;
 
-use \Talm\Comment\HTMLForm\LoginForm;
-use \Talm\Comment\HTMLForm\RegisterForm;
-use \Talm\Comment\HTMLForm\UpdateUserForm;
+use \Almrooth\Comment\HTMLForm\LoginForm;
+use \Almrooth\Comment\HTMLForm\RegisterForm;
+use \Almrooth\Comment\HTMLForm\UpdateUserForm;
 
 /**
  * A controller class.

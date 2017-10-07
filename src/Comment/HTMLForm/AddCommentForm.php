@@ -1,11 +1,11 @@
 <?php
 
-namespace Talm\Comment\HTMLForm;
+namespace Almrooth\Comment\HTMLForm;
 
 use \Anax\HTMLForm\FormModel;
 use \Anax\DI\DIInterface;
-use \Talm\Comment\User;
-use \Talm\Comment\Comment;
+use \Almrooth\Comment\User;
+use \Almrooth\Comment\Comment;
 
 /**
  * Example of FormModel implementation.

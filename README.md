@@ -10,22 +10,41 @@ Anax comment
 [![Code Coverage](https://scrutinizer-ci.com/g/canax/comment/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/canax/comment/?branch=master)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/d831fd4c-b7c6-4ff0-9a83-102440af8929/mini.png)](https://insight.sensiolabs.com/projects/d831fd4c-b7c6-4ff0-9a83-102440af8929)
 
-Anax comment module.
+This is a comment module for use with Anax. The module contains provides login/logout and CRUD functionality for users, admins and comments.
 
+## Setup
 
+### Install with composer
+```
+composer require almrooth/comment
+```
 
-Usage
-------------------
+### Database
+The comment module uses a MYSQL-database for storage. Make sure you have one installed.
 
-Short examples on how to use the module comment.
+Make sure you have a configuration file for your database. There is a sample to use in `vendor/almrooth/config/database.php`.
 
+To setup all tables for use with the module execute the code in `vendor/almrooth/sql/setup.sql`.
+
+### Router files
+Copy the router files to your `config/route`.
+```
+rsync -av vendor/almrooth/config/route/* config/route
+```
+Inlcude the routes in your router configuration `config/route.php`. There is a sample to use in `vendor/almrooth/config/route.php`.
+
+### DI services
+Add the required services to DI, `config/di.php`. There is a sample to use in `vendor/almrooth/config/di.php`.
+
+Make sure that all services that are in the sample file are added to your DI.
+
+#### Pagerender 
 
 
 License
 ------------------
 
 This software carries a MIT license.
-
 
 
 ```
