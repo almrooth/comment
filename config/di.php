@@ -14,14 +14,6 @@ return [
                 return $obj;
             }
         ],
-        "pageRender" => [
-            "shared" => true,
-            "callback" => function () {
-                $obj = new \Almrooth\Page\PageRender();
-                $obj->setDI($this);
-                return $obj;
-            }
-        ],
         "commentController" => [
             "shared" => false,
             "callback" => function () {
