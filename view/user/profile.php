@@ -18,5 +18,5 @@
 </table>
 
 <?php if ($this->di->get("session")->get("user_id") === $user->id || $this->di->get("session")->get("user_role") === "admin") : ?>
-    <a href="<?= $app->link('user/update') ?>" class="btn">Redigera profil</a>
+    <a href="<?= $this->di->get('url')->create('user/update') ?>" class="btn">Redigera profil</a>
 <?php endif; ?>

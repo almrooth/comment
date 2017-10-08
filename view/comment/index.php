@@ -4,12 +4,12 @@
 
     <article class="comment">
         <header>
-            <a href="<?= $app->link("comment/" . $comment->id) ?>"># <?= $comment->id ?></a>
+            <a href="<?= $this->di->get('url')->create("comment/" . $comment->id) ?>"># <?= $comment->id ?></a>
 
             <?php if ($this->di->get("session")->get("user_id") === $comment->user_id || $this->di->get("session")->get("user_role") === "admin") : ?>
                 <div>
-                    <a class="btn" href="<?= $app->link("comment/update/" . $comment->id) ?>">Edit</a>
-                    <a class="btn" href="<?= $app->link("comment/delete/" . $comment->id) ?>">Delete</a>
+                    <a class="btn" href="<?= $this->di->get('url')->create("comment/update/" . $comment->id) ?>">Edit</a>
+                    <a class="btn" href="<?= $this->di->get('url')->create("comment/delete/" . $comment->id) ?>">Delete</a>
                 </div>
             <?php endif; ?>
 

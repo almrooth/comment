@@ -13,7 +13,7 @@
             <tr>
                 <td><?= $comment->id ?></td>
                 <td><?= $comment->username ?></td>
-                <td><a class="btn" href="<?= $app->link('comment/update/' . $comment->id) ?>">Edit</a><a class="btn" href="<?= $app->link('comment/delete/' . $comment->id) ?>">Delete</a></td>
+                <td><a class="btn" href="<?= $this->di->get('url')->create('comment/update/' . $comment->id) ?>">Edit</a><a class="btn" href="<?= $this->url->create('comment/delete/' . $comment->id) ?>">Delete</a></td>
             </tr>
         <?php endforeach; ?>
     </tbody>

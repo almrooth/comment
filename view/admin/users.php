@@ -16,11 +16,11 @@
                 <td><?= $user->id ?></td>
                 <td><?= $user->username ?></td>
                 <td><?= $user->email ?></td>
-                <td><a class="btn" href="<?= $app->link('admin/user/update/' . $user->id) ?>">Edit</a></td>
+                <td><a class="btn" href="<?= $this->di->get('url')->create('admin/user/update/' . $user->id) ?>">Edit</a></td>
                 <?php if (isset($user->deleted)) : ?>
                     <td><?= $user->deleted ?></td>
                 <?php else : ?>
-                <td><a class="btn" href="<?= $app->link('admin/user/delete/' . $user->id) ?>">Delete</a></td>
+                <td><a class="btn" href="<?= $this->di->get('url')->create('admin/user/delete/' . $user->id) ?>">Delete</a></td>
                 <?php endif; ?>
             </tr>
         <?php endforeach; ?>

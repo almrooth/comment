@@ -29,7 +29,7 @@ To setup all tables for use with the module execute the code in `vendor/almrooth
 ### Router files
 Copy the router files to your `config/route`.
 ```
-rsync -av vendor/almrooth/config/route/* config/route
+rsync -av vendor/almrooth/comment/config/route/* config/route/
 ```
 Inlcude the routes in your router configuration `config/route.php`. There is a sample to use in `vendor/almrooth/config/route.php`.
 
@@ -38,8 +38,12 @@ Add the required services to DI, `config/di.php`. There is a sample to use in `v
 
 Make sure that all services that are in the sample file are added to your DI.
 
-#### Pagerender 
+### Views
+The comment module ships with its own default views. Copy them to your view directory.
 
+```
+rsync -av vendor/almrooth/comment/view/* view/
+```
 
 License
 ------------------

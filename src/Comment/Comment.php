@@ -4,7 +4,7 @@ namespace Almrooth\Comment;
 
 use \Anax\Database\ActiveRecordModel;
 
-use \Talm\Comment\User;
+use \Almrooth\Comment\User;
 
 /**
  * A database driven model.

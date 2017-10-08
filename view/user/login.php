@@ -2,4 +2,4 @@
 
 <?= $form ?>
 
-<a href="<?= $app->link('user/register') ?>">Registrera dig</a>
+<a href="<?= $this->di->get('url')->create('user/register') ?>">Registrera dig</a>
