@@ -106,7 +106,9 @@ class CommentController implements
         $comment->find("id", $id);
 
         // If logged in user is owner of comment or admin then delete
-        if ($this->di->get("session")->get("user_id") === $comment->user_id || $this->di->get("session")->get("user_role") === "admin") {
+        $currentId = $this->di->get("session")->get("user_id");
+        $currentRole = $this->di->get("session")->get("user_role");
+        if ($currentId === $comment->user_id || $currentRole === "admin") {
             $comment->delete();
         }
 

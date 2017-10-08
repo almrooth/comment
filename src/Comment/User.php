@@ -60,6 +60,6 @@ class User extends ActiveRecordModel
 
     public function gravatar()
     {
-        return "https://www.gravatar.com/avatar/" . md5(strtolower(trim($this->email))); 
+        return "https://www.gravatar.com/avatar/" . md5(strtolower(trim($this->email)));
     }
 }

@@ -33,7 +33,7 @@ class Comment extends ActiveRecordModel
 
     public function gravatar($email)
     {
-        return "https://www.gravatar.com/avatar/" . md5(strtolower(trim($email))); 
+        return "https://www.gravatar.com/avatar/" . md5(strtolower(trim($email)));
     }
 
     public function getAll()

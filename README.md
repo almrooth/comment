@@ -22,19 +22,19 @@ composer require almrooth/comment
 ### Database
 The comment module uses a MYSQL-database for storage. Make sure you have one installed.
 
-Make sure you have a configuration file for your database. There is a sample to use in `vendor/almrooth/config/database.php`.
+Make sure you have a configuration file for your database. There is a sample to use in `vendor/almrooth/comment/config/database.php`.
 
-To setup all tables for use with the module execute the code in `vendor/almrooth/sql/setup.sql`.
+To setup all tables for use with the module execute the code in `vendor/almrooth/comment/sql/setup.sql`.
 
 ### Router files
 Copy the router files to your `config/route`.
 ```
 rsync -av vendor/almrooth/comment/config/route/* config/route/
 ```
-Inlcude the routes in your router configuration `config/route.php`. There is a sample to use in `vendor/almrooth/config/route.php`.
+Inlcude the routes in your router configuration `config/route.php`. There is a sample to use in `vendor/almrooth/comment/config/route.php`.
 
 ### DI services
-Add the required services to DI, `config/di.php`. There is a sample to use in `vendor/almrooth/config/di.php`.
+Add the required services to DI, `config/di.php`. There is a sample to use in `vendor/almrooth/comment/config/di.php`.
 
 Make sure that all services that are in the sample file are added to your DI.
 
