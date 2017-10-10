@@ -29,4 +29,3 @@ return [
     // True to be verbose on connection failed
     "debug_connect"   => false,
 ];
-    

@@ -174,6 +174,13 @@ return [
                 ("user", "doe", "$2y$10$Q4Y6zom7KP1EiGcKjFg0K.pFfRsf5.XeTrarffeB.Ug89LanDFeXO", "doe@comment.com");';
                 $obj->execute($sql);
 
+                // Add comments
+                $sql = '
+                INSERT INTO `rv1_comments` (`user_id`, `content`) VALUES
+                ("1", "This is a comment by an admin, admin."),
+                ("2", "This is a comment by a user, doe.");';
+                $obj->execute($sql);
+
                 return $obj;
             }
         ],
