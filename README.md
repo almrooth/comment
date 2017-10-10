@@ -1,7 +1,8 @@
 Anax comment
 ==================================
 
-[![Latest Stable Version](https://poser.pugx.org/anax/comment/v/stable)](https://packagist.org/packages/anax/comment)
+[![Latest Stable Version](https://poser.pugx.org/almrooth/comment/v/stable)](https://packagist.org/packages/almrooth/comment)
+[![Total Downloads](https://poser.pugx.org/almrooth/comment/downloads)](https://packagist.org/packages/almrooth/comment)
 [![Join the chat at https://gitter.im/mosbth/anax](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/canax?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/canax/comment.svg?branch=master)](https://travis-ci.org/canax/comment)
 [![CircleCI](https://circleci.com/gh/canax/comment.svg?style=svg)](https://circleci.com/gh/canax/comment)

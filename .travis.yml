@@ -12,7 +12,6 @@ php:
 sudo: false
 
 
-
 git:
     submodules: false
 
