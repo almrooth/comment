@@ -8,13 +8,11 @@ php:
     - nightly
 
 
-
 sudo: false
 
 
 git:
     submodules: false
-
 
 
 addons:
@@ -25,14 +23,12 @@ addons:
             #- shellcheck
 
 
-
 matrix:
     allow_failures:
         #- php: "7.0"
         #- php: "7.1"
         - php: nightly
         - php: hhvm
-
 
 
 before_script:
@@ -42,7 +38,6 @@ before_script:
 script:
     - make check
     - make test
-
 
 
 # notifications:
