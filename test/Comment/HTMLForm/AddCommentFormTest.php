@@ -36,13 +36,4 @@ class AddCommentFormTest extends \PHPUnit_Framework_TestCase
         $html = $this->form->getHTML();
         $this->assertEquals(is_string($html), true);
     }
-
-    /**
-     * Submit the form
-     */
-    public function testCallbackSubmit()
-    {
-        // self::$di->get("session")->set("user_id", 1);
-        // $this->form->callbackSubmit();
-    }
 }
